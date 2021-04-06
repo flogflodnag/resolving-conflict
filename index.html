@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style media="screen">
+		body {
+			text-align: center;
+			font-family: sans-serif;
+		}
+		div {
+			border: 5px solid;
+		}
+		#game {
+			max-width: 50%;
+			margin: 0px auto;
+		}
+		#scenario {
+			padding: 5px;
+		}
+		button {
+			margin: 3px auto;
+			display: block;
+		}
+		.actions {
+			width: 80%;
+			border: 1px solid;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Chapter 10: Resolving Conflict Activity</h1>
+	<div id="game">
+		<div class="scenario">
+			<p id="scenario">Scenario Text</p>
+			<button id="nextButton" onclick="rotateScenario()" disabled>Next Scenario</button>
+		</div>
+		<div id="actions">
+			<button class="actions" id="action1" onclick="writeActionResponse(0)">Action 1 Text</button>
+			<button class="actions" id="action2" onclick="writeActionResponse(1)">Action 2 Text</button>
+			<button class="actions" id="action3" onclick="writeActionResponse(2)">Action 3 Text</button>
+			<button class="actions" id="action4" onclick="writeActionResponse(3)">Action 4 Text</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+var scenarioElement = document.getElementById("scenario");
+var actionElements = document.getElementsByClassName("actions");
+var scenarioIndex = 0;
+var dataObject;
+
+fetch("./scenarios.json")
+	.then(response => { return response.json(); })
+	.then(resjson => { dataObject = resjson; writeScenario(dataObject); });
+
+document.getElementById("nextButton").disabled = true;
+
+function writeScenario(data) {
+	scenarioElement.textContent = data[scenarioIndex].scenario;
+	scenarioElement.style.color = "black";
+	for (var i=0;i<actionElements.length;i++) {
+		document.getElementById("action" + String(i+1)).textContent =
+			data[scenarioIndex].actions[i].action;
+	}
+}
+
+function writeActionResponse(actionIndex) {
+	var nextButtonElement = document.getElementById("nextButton");
+	if (dataObject[scenarioIndex].correct == actionIndex) {
+		scenarioElement.style.color = "green";
+		nextButtonElement.disabled = false;
+	} else {
+		scenarioElement.style.color = "red";
+		nextButtonElement.disabled = true;
+	}
+	scenarioElement.textContent =
+		dataObject[scenarioIndex].actions[actionIndex].response;
+}
+
+function rotateScenario() {
+	document.getElementById("nextButton").disabled = true;
+	scenarioIndex++;
+	writeScenario(dataObject);
+}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+[
+	{
+		"scenario":"You ask a coworker for help moving after work, and they respond by calling you lazy.",
+		"actions": [
+			{
+				"action":"You insult your coworker." ,
+				"response":"Incorrect. You should strive to keep the workplace professional, even when others fail to."
+			},
+			{
+				"action":"You consider that the coworker may be busy, and failed to consider your feelings.",
+				"response":"Correct. By handling the situation professionally, you prepare yourself to correct difficult behavior."
+			},
+			{
+				"action":"You ignore the insult, refusing to acknowledge it.",
+				"response":"Incorrect. Allowing difficult behavior to continue will lead to more difficult behavior and contribute greatly to negative stress."
+			},
+			{
+				"action":"You worry that your coworker thinks that you are lazy.",
+				"response":"Incorrect. The coworker had not given any thought to the insult and ruminating on the interaction would contribute to negative stress."
+			}
+		],
+		"correct": 1
+	},
+	{
+		"scenario":"A coworker is constantly pointing out potential disasters to benign decisions.",
+		"actions": [
+			{
+				"action":"\"I have difficulty maintaining my enthusiasm when you so often point out the possible negatives.\"",
+				"response":"Correct. Successfully acknowledges the difficult behavior without gaining much resentment."
+			},
+			{
+				"action":"\"Can you just shut up?\"",
+				"response":"Incorrect. A hostile response will generate resentment and tension."
+			},
+			{
+				"action":"\"Are you going to contribute something helpful or just keep yapping?\"",
+				"response":"Incorrect. A hostile response will generate resentment and tension."
+			},
+			{
+				"action":"\"I find you to be a total pessimist, and it annoys me.\"",
+				"response":"Incorrect. You should focus on the action and not the person when providing criticism."
+			}
+		],
+		"correct": 0
+	},
+	{
+		"scenario":"A coworker brings up in a conversation that the employees should start slacking to get back at the management.",
+		"actions": [
+			{
+				"action":"You attempt to pick apart and invalidate their viewpoint.",
+				"response":"Incorrect. Doing so belittles the coworker in a non-constructive way."
+			},
+			{
+				"action":"You tell your coworker that they should not think that way.",
+				"response":"Incorrect. A statement like this is vague and judgmental."
+			},
+			{
+				"action":"You communicate to your coworker that you understand their view, but provide a counterpoint or different perspective.",
+				"response":"Correct. By listening and responding you give your coworker a chance to express their concerns and maintains a positive conversation. This makes it easier to aid the coworker's behavior."
+			},
+			{
+				"action":"You agree with your coworker.",
+				"response":"Incorrect. Agreeing with the coworker will avoid tension in the moment but increases the chances of trouble in the future."
+			}
+		],
+		"correct": 2
+	},
+	{
+		"scenario":"A coworker is overstaying a visit to your office.",
+		"actions": [
+			{
+				"action":"You close the door in your coworker's face.",
+				"response":"Incorrect. Such an action can be rude and will likely be taken negatively by the coworker."
+			},
+			{
+				"action":"You arrange your office so such visits are more difficult.",
+				"response":"Incorrect. Passive-aggressive actions like this are bad for workplace relationships."
+			},
+			{
+				"action":"You ruffle your papers and return your attention to your work.",
+				"response":"Correct. By utilizing subtlety, you signal to the coworker that you need to return to your work without insulting them."
+			},
+			{
+				"action":"You tell the coworker that they have to leave.",
+				"response":"Incorrect. The lack of tact can be interpreted negatively by the coworker."
+			}
+		],
+		"correct": 2
+	},
+	{
+		"scenario":"A coworker is in an annoying manner. You attempt to remedy the situation with humor.",
+		"actions": [
+			{
+				"action":"You make a joke about the situation and the coworker.",
+				"response":"Incorrect. A blatant joke about the coworker can come off as rude and condescending."
+			},
+			{
+				"action":"You make a joke about the situation and yourself.",
+				"response":"Correct. This is subtle enough for the coworker to come to the conclusion themselves, which is more likely to be effective for changing behavior."
+			},
+			{
+				"action":"You belittle your coworker through your joke.",
+				"response":"Incorrect. Insulting your coworker will degrade your workplace relationship."
+			},
+			{
+				"action":"You downplay the difficult behavior in your joke.",
+				"response":"Incorrect. This may temporarily relieve tension but may be interpreted as a \"go-ahead\" for the coworker to continue their difficult behavior."
+			}
+		],
+		"correct": 1
+	},
+	{
+		"scenario":"A coworker has been asking you to perform simple internet searches for them.",
+		"actions": [
+			{
+				"action":"(Sarcastic) \"No, I don't know how to, maybe you can figure it out?\"",
+				"response":"Incorrect. A sarcastic response can easily be insulting."
+			},
+			{
+				"action":"\"Stop asking me for help.\"",
+				"response":"Incorrect. This response may lead the coworker to not ask for help, even when it is truly needed."
+			},
+			{
+				"action":"\"You know how to search the web.\"",
+				"response":"Correct. Uses subtlety to communicate that you shouldn't need to help with simple tasks, but still leaves the door open to help with more complex tasks."
+			},
+			{
+				"action":"\"Okay.\"",
+				"response":"Incorrect. Agreeing will reinforce difficult behavior."
+			}
+		],
+		"correct": 2
+	},
+	{
+		"scenario":"A typically difficult coworker demonstrates positive behavior.",
+		"actions": [
+			{
+				"action":"You appreciate the behavior, but do not say anything.",
+				"response":"Incorrect. A coworker is likely to slip back into difficult behavior if their good behavior is not acknowledged."
+			},
+			{
+				"action":"You throw a party for the coworker in celebration.",
+				"response":"Incorrect. An excessive reaction can seem disingenuous or sarcastic."
+			},
+			{
+				"action":"You tease the coworker.",
+				"response":"Incorrect. Even if done without malice, the coworker may give the positive behavior a negative connection."
+			},
+			{
+				"action":"You tell the coworker you appreciate their professional behavior.",
+				"response":"Correct. By rewarding the positive behavior, you engage in positive reinforcement, which is highly effective at defining new behavior."
+			}
+		],
+		"correct": 3
+	}
+]
