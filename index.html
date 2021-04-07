@@ -88,6 +88,10 @@ function writeActionResponse(actionIndex) {
 }
 
 function rotateScenario() {
+	console.log(scenarioIndex);
+	if (scenarioIndex == 8) {
+		document.getElementById("nextButton").style.display = "none";
+	}
 	document.getElementById("nextButton").disabled = true;
 	scenarioIndex++;
 	writeScenario(dataObject);
