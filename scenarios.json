@@ -1,5 +1,71 @@
 [
 	{
+		"scenario":"Two workers arguing over which design will work the best.",
+		"actions": [
+			{
+				"action":"Personality clashes",
+				"response":"Incorrect. Personality clashes are an atagonistic relationship with another worker, not merely arguing about a specific difference."
+			},
+			{
+				"action":"Difference of opinion",
+				"response":"Correct. "
+			},
+			{
+				"action":"Competition for limited resources",
+				"response":"Incorrect. The workers are not arguring over possession of something."
+			},
+			{
+				"action":"Incivility",
+				"response":"Incorrect. Incivility is a pattern of rude behavior, not a single instance of argument."
+			}
+		],
+		"correct": 1
+	},
+	{
+		"scenario":"Hurtful treatment of others in the workplace that is malicious and repeated is considered:",
+		"actions": [
+			{
+				"action":"Workplace bullying",
+				"response":"Correct. "
+			},
+			{
+				"action":"Personality clashing",
+				"response":"Incorrect. Personality clashes may be repeated, but are not malicious."
+			},
+			{
+				"action":"Differences in opinion",
+				"response":"Incorrect. A difference in opinion is not repeated, nor malicious."
+			},
+			{
+				"action":"Sexual harassment",
+				"response":"Incorrect. Sexual harassment may be malicious and repeated, but is not necessarily so."
+			}
+		],
+		"correct": 0
+	},
+	{
+		"scenario":"Which of the following is a special type of conflict?",
+		"actions": [
+			{
+				"action":"Incivility",
+				"response":"Incorrect. Incivility is very common, approximately 96% of workers have had experienced uncivil behavior."
+			},
+			{
+				"action":"Personality clashes and drama",
+				"response":"Incorrect. Personality clashes are common, especially in workplaces with many employees."
+			},
+			{
+				"action":"Sexual harassment",
+				"response":"Correct. "
+			},
+			{
+				"action":"Competition for limited resources",
+				"response":"Incorrect. As companies attempt to reduce expenses, competition for limited resources becomes more common."
+			}
+		],
+		"correct": 2
+	},
+	{
 		"scenario":"You ask a coworker for help moving after work, and they respond by calling you lazy.",
 		"actions": [
 			{
